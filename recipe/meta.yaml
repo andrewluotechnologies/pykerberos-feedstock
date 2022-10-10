@@ -26,12 +26,12 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - {{ compiler('c') }}
   host:
-    - krb5
+    - krb5  # [linux]
     - pip
     - python
     - setuptools
   run:
-    - krb5
+    - krb5  # [linux]
     - python
 
 test:
